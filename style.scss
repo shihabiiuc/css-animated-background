@@ -10,9 +10,11 @@ body {
 .example {
   display: grid;
   margin-bottom: 90px;
-  h2 {
+  p {
     margin: auto;
     text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
     font-size: 2em;
     @media(min-width: 768px) {
       font-size: 3em;
@@ -96,7 +98,7 @@ body {
   background-size: 400% 400%;
   animation: gradient-example-4 10s ease infinite;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
     animation: glow-example-4 2s ease-in-out infinite alternate;
@@ -130,7 +132,7 @@ body {
   animation: gradient-example-5 10s ease infinite;
   position: relative;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
     animation: dropshadow-example-5 5s ease infinite alternate;
@@ -169,7 +171,7 @@ body {
   position: relative;
   margin: 90px auto;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
   }
@@ -202,7 +204,7 @@ body {
     background-image: url("./img/bg-hero.png");
   }
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
   }
@@ -231,7 +233,7 @@ body {
   animation: background-anim-example-8 10s linear infinite;
   position: relative;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
   }
@@ -263,7 +265,7 @@ body {
   background-size: 400% 400%;
   animation: background-anim-example-9 1s ease-in-out infinite;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
   }
@@ -288,7 +290,7 @@ body {
   background-size: cover;
   animation: background-anim-example-10 20s linear infinite;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
   }
@@ -315,7 +317,7 @@ body {
   background-repeat: no-repeat;
   animation: background-anim-example-11 20s ease-in-out infinite;
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
   }
@@ -359,7 +361,7 @@ body {
     animation: rectangle-anim-example-12 5s linear infinite;
   }
 
-  h2 {
+  p {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     z-index: 1;
@@ -387,7 +389,7 @@ body {
   background-color: #4285F4;
   animation: background-animation-example-13 5s ease-in-out infinite;
 
-  h2 {
+  p {
     color: white;
   }
   @keyframes background-animation-example-13 {
@@ -408,7 +410,7 @@ body {
   background-color: #4285F4;
   animation: background-animation-example-14 10s ease-in-out infinite;
 
-  h2 {
+  p {
     color: white;
     text-shadow: 1px 1px 2px #000000;
   }

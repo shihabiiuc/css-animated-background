@@ -16,14 +16,16 @@ body {
   margin-bottom: 90px;
 }
 
-.example h2 {
+.example p {
   margin: auto;
   text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
   font-size: 2em;
 }
 
 @media (min-width: 768px) {
-  .example h2 {
+  .example p {
     font-size: 3em;
   }
 }
@@ -149,7 +151,7 @@ body {
           animation: gradient-example-4 10s ease infinite;
 }
 
-.example-4 h2 {
+.example-4 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
   -webkit-animation: glow-example-4 2s ease-in-out infinite alternate;
@@ -209,7 +211,7 @@ body {
   position: relative;
 }
 
-.example-5 h2 {
+.example-5 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
   -webkit-animation: dropshadow-example-5 5s ease infinite alternate;
@@ -274,7 +276,7 @@ body {
   margin: 90px auto;
 }
 
-.example-6 h2 {
+.example-6 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -333,7 +335,7 @@ body {
   }
 }
 
-.example-7 h2 {
+.example-7 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
@@ -385,7 +387,7 @@ body {
   position: relative;
 }
 
-.example-8 h2 {
+.example-8 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
@@ -436,7 +438,7 @@ body {
           animation: background-anim-example-9 1s ease-in-out infinite;
 }
 
-.example-9 h2 {
+.example-9 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
@@ -475,7 +477,7 @@ body {
           animation: background-anim-example-10 20s linear infinite;
 }
 
-.example-10 h2 {
+.example-10 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
@@ -515,7 +517,7 @@ body {
           animation: background-anim-example-11 20s ease-in-out infinite;
 }
 
-.example-11 h2 {
+.example-11 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
 }
@@ -577,7 +579,7 @@ body {
           animation: rectangle-anim-example-12 5s linear infinite;
 }
 
-.example-12 h2 {
+.example-12 p {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
   z-index: 1;
@@ -634,7 +636,7 @@ body {
           animation: background-animation-example-13 5s ease-in-out infinite;
 }
 
-.example-13 h2 {
+.example-13 p {
   color: white;
 }
 
@@ -669,7 +671,7 @@ body {
           animation: background-animation-example-14 10s ease-in-out infinite;
 }
 
-.example-14 h2 {
+.example-14 p {
   color: white;
   text-shadow: 1px 1px 2px #000000;
 }
