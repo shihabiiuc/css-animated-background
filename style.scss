@@ -1,0 +1,429 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E9EBEC;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.example {
+  display: grid;
+  margin-bottom: 90px;
+  h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    @media(min-width: 768px) {
+      font-size: 3em;
+    }
+  }
+}
+
+
+// example 1
+.example-1 {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+  background-image: linear-gradient(-45deg, #f0f, #00f, #0f0);
+  background-size: 400% 400%;
+  animation: gradient-example-1 5s ease infinite;
+
+  @keyframes gradient-example-1 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+// example 2
+.example-2 {
+  width: 100%;
+  min-height: 400px;
+  background: radial-gradient(ellipse at center, #ff2f2f, #6c0000);
+  animation: pulse-example-2 2s linear infinite;
+
+  @keyframes pulse-example-2 {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+}
+
+// example 3
+.example-3 {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(-45deg, #D4145A, #FBB03B, #FF5E3A);
+  background-size: 400% 400%;
+  animation: gradient-example-3 8s ease infinite;
+
+  @keyframes gradient-example-3 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+// example 4
+.example-4 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background: linear-gradient(-45deg, #FF5F6D, #FFC371, #FF5F6D, #FFC371);
+  background-size: 400% 400%;
+  animation: gradient-example-4 10s ease infinite;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    animation: glow-example-4 2s ease-in-out infinite alternate;
+  }
+  @keyframes gradient-example-4 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes glow-example-4 {
+    0% {
+      text-shadow: 2px 2px 4px #000000;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+    }
+  }
+}
+// example 5
+.example-5 {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(to right, #64B5F6, #E57373, #FBC02D, #4DB6AC);
+  background-size: 400% 400%;
+  animation: gradient-example-5 10s ease infinite;
+  position: relative;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    animation: dropshadow-example-5 5s ease infinite alternate;
+  }
+
+  @keyframes gradient-example-5 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes dropshadow-example-5 {
+    0% {
+      text-shadow: 2px 2px 4px #000000;
+    }
+    50% {
+      text-shadow: 6px 6px 10px #000000;
+    }
+    100% {
+      text-shadow: 2px 2px 4px #000000;
+    }
+  }
+}
+// example 6
+.example-6 {
+  max-width: 80%;
+  min-height: 400px;
+  background: radial-gradient(circle, #A9A9A9, #000000);
+  animation: pulsate-example-6 4s ease-in-out infinite;
+  position: relative;
+  margin: 90px auto;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  @keyframes pulsate-example-6 {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+}
+// example 7
+.example-7 {
+  min-height: 400px;
+  background-color: #000;
+  background-image: url("./img/bg-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: background-anim-example-7 10s linear infinite;
+  position: relative;
+  @media(min-width: 768px) {
+    background-image: url("./img/bg-hero.png");
+  }
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  @keyframes background-anim-example-7 {
+    0% {
+      background-size: 120% auto;
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      background-size: 100% auto;
+      filter: hue-rotate(90deg);
+    }
+    100% {
+      background-size: 120% auto;
+      filter: hue-rotate(0deg);
+    }
+  }
+}
+// example 8
+.example-8 {
+  min-height: 400px;
+  background-image: url(./img/isometric-mockup-four.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: background-anim-example-8 10s linear infinite;
+  position: relative;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  @keyframes background-anim-example-8 {
+    0% {
+      background-position: center;
+      filter: blur(0px);
+    }
+    50% {
+      background-position: left top;
+      filter: blur(5px);
+    }
+    100% {
+      background-position: right bottom;
+      filter: blur(0px);
+    }
+  }
+}
+// example 9
+.example-9 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background: 
+    linear-gradient(45deg, #ff8a00, #e52e71),
+    linear-gradient(-45deg, #ffc900, #ff3838),
+    linear-gradient(135deg, #8e2de2, #4a00e0),
+    linear-gradient(-135deg, #08cde9, #006ba1);
+  background-size: 400% 400%;
+  animation: background-anim-example-9 1s ease-in-out infinite;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  @keyframes background-anim-example-9 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+// example 10
+.example-10 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-image: url('./img/isometric-mockup.jpg');
+  background-size: cover;
+  animation: background-anim-example-10 20s linear infinite;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  @keyframes background-anim-example-10 {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+// example 11
+.example-11 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-image: url('./img/isometric-mockup-two.jpg');
+  // don't use background-size to cover
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: background-anim-example-11 20s ease-in-out infinite;
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  @keyframes background-anim-example-11 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+// example 12
+.example-12 {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    background: url('./img/isometric-mockup-three.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: slide-example-12 5s linear infinite;
+  }
+  .animated-rectangle {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.5) 100%);
+    animation: rectangle-anim-example-12 5s linear infinite;
+  }
+
+  h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 1;
+  }
+  @keyframes rectangle-anim-example-12 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes slide-example-12 {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+// example 13
+.example-13 {
+  min-height: 400px;
+  background-color: #4285F4;
+  animation: background-animation-example-13 5s ease-in-out infinite;
+
+  h2 {
+    color: white;
+  }
+  @keyframes background-animation-example-13 {
+    0% {
+      background-color: #4285F4;
+    }
+    50% {
+      background-color: #EA4335;
+    }
+    100% {
+      background-color: #FBBC05;
+    }
+  }
+}
+// example 14
+.example-14 {
+  min-height: 400px;
+  background-color: #4285F4;
+  animation: background-animation-example-14 10s ease-in-out infinite;
+
+  h2 {
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  @keyframes background-animation-example-14 {
+    0% {
+      background: linear-gradient(0deg, rgba(#0E0551, .7)), url(img/isometric-mockup.jpg) no-repeat;
+    }
+    30% {
+      background: linear-gradient(0deg, rgba(#570101, .7)), url(img/isometric-mockup-two.jpg) no-repeat;
+    }
+    60% {
+      background: linear-gradient(0deg, rgba(#013611, .5)), url(img/isometric-mockup-three.jpg) no-repeat;
+    }
+    100% {
+      background: linear-gradient(0deg, rgba(#570252, .6)), url(img/isometric-mockup.jpg) no-repeat;
+    }
+  }
+}

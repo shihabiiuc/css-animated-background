@@ -1,0 +1,714 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E9EBEC;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.example {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 90px;
+}
+
+.example h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .example h2 {
+    font-size: 3em;
+  }
+}
+
+.example-1 {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+  background-image: linear-gradient(-45deg, #f0f, #00f, #0f0);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-example-1 5s ease infinite;
+          animation: gradient-example-1 5s ease infinite;
+}
+
+@-webkit-keyframes gradient-example-1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-example-1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.example-2 {
+  width: 100%;
+  min-height: 400px;
+  background: radial-gradient(ellipse at center, #ff2f2f, #6c0000);
+  -webkit-animation: pulse-example-2 2s linear infinite;
+          animation: pulse-example-2 2s linear infinite;
+}
+
+@-webkit-keyframes pulse-example-2 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse-example-2 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.example-3 {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(-45deg, #D4145A, #FBB03B, #FF5E3A);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-example-3 8s ease infinite;
+          animation: gradient-example-3 8s ease infinite;
+}
+
+@-webkit-keyframes gradient-example-3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-example-3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.example-4 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background: linear-gradient(-45deg, #FF5F6D, #FFC371, #FF5F6D, #FFC371);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-example-4 10s ease infinite;
+          animation: gradient-example-4 10s ease infinite;
+}
+
+.example-4 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-animation: glow-example-4 2s ease-in-out infinite alternate;
+          animation: glow-example-4 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes gradient-example-4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-example-4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes glow-example-4 {
+  0% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+  }
+}
+
+@keyframes glow-example-4 {
+  0% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+  }
+}
+
+.example-5 {
+  width: 100%;
+  min-height: 400px;
+  background: -webkit-gradient(linear, left top, right top, from(#64B5F6), color-stop(#E57373), color-stop(#FBC02D), to(#4DB6AC));
+  background: linear-gradient(to right, #64B5F6, #E57373, #FBC02D, #4DB6AC);
+  background-size: 400% 400%;
+  -webkit-animation: gradient-example-5 10s ease infinite;
+          animation: gradient-example-5 10s ease infinite;
+  position: relative;
+}
+
+.example-5 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-animation: dropshadow-example-5 5s ease infinite alternate;
+          animation: dropshadow-example-5 5s ease infinite alternate;
+}
+
+@-webkit-keyframes gradient-example-5 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-example-5 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes dropshadow-example-5 {
+  0% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  50% {
+    text-shadow: 6px 6px 10px #000000;
+  }
+  100% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+
+@keyframes dropshadow-example-5 {
+  0% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  50% {
+    text-shadow: 6px 6px 10px #000000;
+  }
+  100% {
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+
+.example-6 {
+  max-width: 80%;
+  min-height: 400px;
+  background: radial-gradient(circle, #A9A9A9, #000000);
+  -webkit-animation: pulsate-example-6 4s ease-in-out infinite;
+          animation: pulsate-example-6 4s ease-in-out infinite;
+  position: relative;
+  margin: 90px auto;
+}
+
+.example-6 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@-webkit-keyframes pulsate-example-6 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulsate-example-6 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.example-7 {
+  min-height: 400px;
+  background-color: #000;
+  background-image: url("./img/bg-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: background-anim-example-7 10s linear infinite;
+          animation: background-anim-example-7 10s linear infinite;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .example-7 {
+    background-image: url("./img/bg-hero.png");
+  }
+}
+
+.example-7 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@-webkit-keyframes background-anim-example-7 {
+  0% {
+    background-size: 120% auto;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    background-size: 100% auto;
+    -webkit-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+  }
+  100% {
+    background-size: 120% auto;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes background-anim-example-7 {
+  0% {
+    background-size: 120% auto;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    background-size: 100% auto;
+    -webkit-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+  }
+  100% {
+    background-size: 120% auto;
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+.example-8 {
+  min-height: 400px;
+  background-image: url(./img/isometric-mockup-four.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: background-anim-example-8 10s linear infinite;
+          animation: background-anim-example-8 10s linear infinite;
+  position: relative;
+}
+
+.example-8 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@-webkit-keyframes background-anim-example-8 {
+  0% {
+    background-position: center;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  50% {
+    background-position: left top;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    background-position: right bottom;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes background-anim-example-8 {
+  0% {
+    background-position: center;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  50% {
+    background-position: left top;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    background-position: right bottom;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+.example-9 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background: linear-gradient(45deg, #ff8a00, #e52e71), linear-gradient(-45deg, #ffc900, #ff3838), linear-gradient(135deg, #8e2de2, #4a00e0), linear-gradient(-135deg, #08cde9, #006ba1);
+  background-size: 400% 400%;
+  -webkit-animation: background-anim-example-9 1s ease-in-out infinite;
+          animation: background-anim-example-9 1s ease-in-out infinite;
+}
+
+.example-9 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@-webkit-keyframes background-anim-example-9 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes background-anim-example-9 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.example-10 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-image: url("./img/isometric-mockup.jpg");
+  background-size: cover;
+  -webkit-animation: background-anim-example-10 20s linear infinite;
+          animation: background-anim-example-10 20s linear infinite;
+}
+
+.example-10 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@-webkit-keyframes background-anim-example-10 {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes background-anim-example-10 {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.example-11 {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-image: url("./img/isometric-mockup-two.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: background-anim-example-11 20s ease-in-out infinite;
+          animation: background-anim-example-11 20s ease-in-out infinite;
+}
+
+.example-11 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@-webkit-keyframes background-anim-example-11 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes background-anim-example-11 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.example-12 {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.example-12::before {
+  content: "";
+  background: url("./img/isometric-mockup-three.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: slide-example-12 5s linear infinite;
+          animation: slide-example-12 5s linear infinite;
+}
+
+.example-12 .animated-rectangle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-animation: rectangle-anim-example-12 5s linear infinite;
+          animation: rectangle-anim-example-12 5s linear infinite;
+}
+
+.example-12 h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  z-index: 1;
+}
+
+@-webkit-keyframes rectangle-anim-example-12 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes rectangle-anim-example-12 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes slide-example-12 {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slide-example-12 {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.example-13 {
+  min-height: 400px;
+  background-color: #4285F4;
+  -webkit-animation: background-animation-example-13 5s ease-in-out infinite;
+          animation: background-animation-example-13 5s ease-in-out infinite;
+}
+
+.example-13 h2 {
+  color: white;
+}
+
+@-webkit-keyframes background-animation-example-13 {
+  0% {
+    background-color: #4285F4;
+  }
+  50% {
+    background-color: #EA4335;
+  }
+  100% {
+    background-color: #FBBC05;
+  }
+}
+
+@keyframes background-animation-example-13 {
+  0% {
+    background-color: #4285F4;
+  }
+  50% {
+    background-color: #EA4335;
+  }
+  100% {
+    background-color: #FBBC05;
+  }
+}
+
+.example-14 {
+  min-height: 400px;
+  background-color: #4285F4;
+  -webkit-animation: background-animation-example-14 10s ease-in-out infinite;
+          animation: background-animation-example-14 10s ease-in-out infinite;
+}
+
+.example-14 h2 {
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+@-webkit-keyframes background-animation-example-14 {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(14, 5, 81, 0.7))), url(img/isometric-mockup.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(14, 5, 81, 0.7)), url(img/isometric-mockup.jpg) no-repeat;
+  }
+  30% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 1, 1, 0.7))), url(img/isometric-mockup-two.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(87, 1, 1, 0.7)), url(img/isometric-mockup-two.jpg) no-repeat;
+  }
+  60% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 54, 17, 0.5))), url(img/isometric-mockup-three.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(1, 54, 17, 0.5)), url(img/isometric-mockup-three.jpg) no-repeat;
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 2, 82, 0.6))), url(img/isometric-mockup.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(87, 2, 82, 0.6)), url(img/isometric-mockup.jpg) no-repeat;
+  }
+}
+
+@keyframes background-animation-example-14 {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(14, 5, 81, 0.7))), url(img/isometric-mockup.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(14, 5, 81, 0.7)), url(img/isometric-mockup.jpg) no-repeat;
+  }
+  30% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 1, 1, 0.7))), url(img/isometric-mockup-two.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(87, 1, 1, 0.7)), url(img/isometric-mockup-two.jpg) no-repeat;
+  }
+  60% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 54, 17, 0.5))), url(img/isometric-mockup-three.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(1, 54, 17, 0.5)), url(img/isometric-mockup-three.jpg) no-repeat;
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 2, 82, 0.6))), url(img/isometric-mockup.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(87, 2, 82, 0.6)), url(img/isometric-mockup.jpg) no-repeat;
+  }
+}
+/*# sourceMappingURL=style.css.map */
