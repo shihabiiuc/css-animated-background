@@ -93,7 +93,6 @@ body {
 .example-4 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background: linear-gradient(-45deg, #FF5F6D, #FFC371, #FF5F6D, #FFC371);
   background-size: 400% 400%;
   animation: gradient-example-4 10s ease infinite;
@@ -130,7 +129,6 @@ body {
   background: linear-gradient(to right, #64B5F6, #E57373, #FBC02D, #4DB6AC);
   background-size: 400% 400%;
   animation: gradient-example-5 10s ease infinite;
-  position: relative;
 
   p {
     color: #fff;
@@ -168,7 +166,6 @@ body {
   min-height: 400px;
   background: radial-gradient(circle, #A9A9A9, #000000);
   animation: pulsate-example-6 4s ease-in-out infinite;
-  position: relative;
   margin: 90px auto;
 
   p {
@@ -199,7 +196,6 @@ body {
   background-position: center;
   background-size: cover;
   animation: background-anim-example-7 10s linear infinite;
-  position: relative;
   @media(min-width: 768px) {
     background-image: url("./img/bg-hero.png");
   }
@@ -231,7 +227,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   animation: background-anim-example-8 10s linear infinite;
-  position: relative;
 
   p {
     color: #fff;
@@ -256,7 +251,6 @@ body {
 .example-9 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background: 
     linear-gradient(45deg, #ff8a00, #e52e71),
     linear-gradient(-45deg, #ffc900, #ff3838),
@@ -285,7 +279,6 @@ body {
 .example-10 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background-image: url('./img/isometric-mockup.jpg');
   background-size: cover;
   animation: background-anim-example-10 20s linear infinite;
@@ -310,7 +303,6 @@ body {
 .example-11 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background-image: url('./img/isometric-mockup-two.jpg');
   // don't use background-size to cover
   background-position: center;

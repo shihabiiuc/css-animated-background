@@ -144,7 +144,6 @@ body {
 .example-4 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background: linear-gradient(-45deg, #FF5F6D, #FFC371, #FF5F6D, #FFC371);
   background-size: 400% 400%;
   -webkit-animation: gradient-example-4 10s ease infinite;
@@ -208,7 +207,6 @@ body {
   background-size: 400% 400%;
   -webkit-animation: gradient-example-5 10s ease infinite;
           animation: gradient-example-5 10s ease infinite;
-  position: relative;
 }
 
 .example-5 p {
@@ -272,7 +270,6 @@ body {
   background: radial-gradient(circle, #A9A9A9, #000000);
   -webkit-animation: pulsate-example-6 4s ease-in-out infinite;
           animation: pulsate-example-6 4s ease-in-out infinite;
-  position: relative;
   margin: 90px auto;
 }
 
@@ -326,7 +323,6 @@ body {
   background-size: cover;
   -webkit-animation: background-anim-example-7 10s linear infinite;
           animation: background-anim-example-7 10s linear infinite;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -384,7 +380,6 @@ body {
   background-size: cover;
   -webkit-animation: background-anim-example-8 10s linear infinite;
           animation: background-anim-example-8 10s linear infinite;
-  position: relative;
 }
 
 .example-8 p {
@@ -431,7 +426,6 @@ body {
 .example-9 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background: linear-gradient(45deg, #ff8a00, #e52e71), linear-gradient(-45deg, #ffc900, #ff3838), linear-gradient(135deg, #8e2de2, #4a00e0), linear-gradient(-135deg, #08cde9, #006ba1);
   background-size: 400% 400%;
   -webkit-animation: background-anim-example-9 1s ease-in-out infinite;
@@ -470,7 +464,6 @@ body {
 .example-10 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background-image: url("./img/isometric-mockup.jpg");
   background-size: cover;
   -webkit-animation: background-anim-example-10 20s linear infinite;
@@ -509,7 +502,6 @@ body {
 .example-11 {
   width: 100%;
   min-height: 400px;
-  position: relative;
   background-image: url("./img/isometric-mockup-two.jpg");
   background-position: center;
   background-repeat: no-repeat;
